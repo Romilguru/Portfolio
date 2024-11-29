@@ -1,0 +1,251 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Portfolio of Romil Guru - Marketing & Finance Enthusiast with expertise in supply chain management and analytics.">
+    <meta name="keywords" content="Romil Guru, Marketing, Finance, MBA, Portfolio">
+    <style>
+        /* General Styles */
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f2f5;
+            color: #333;
+        }
+        body {
+            background-image: url(https://tse4.mm.bing.net/th?id=OIP.Ukd99L-9yivxkyo910-AZgHaEo&pid=Api&P=0&h=180);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav .logo { font-size: 1.2em; font-weight: bold; }
+        nav ul { list-style: none; display: flex; gap: 15px; }
+        nav ul li a {
+            color: white; text-decoration: none; padding: 8px 12px;
+            background-color: navy; border-radius: 5px; transition: 0.3s;
+        }
+        nav ul li a:hover { background-color: #0056b3; }
+    
+        header { text-align: center; padding: 40px 20px; background: #e3e8ef; }
+        header h1 { font-size: 2em; margin-bottom: 10px; text-transform: uppercase; }
+        header p { color: #555; }
+        header .btn-group a {
+            display: inline-block; margin: 10px 5px; padding: 10px 20px;
+            text-decoration: none; background-color: navy; color: white;
+            border-radius: 5px; transition: transform 0.3s;
+        }
+        header .btn-group a:hover { transform: scale(1.1); }
+    
+        .photo-container { margin: 20px auto; text-align: center; perspective: 1000px; }
+        .photo {
+            width: 200px; height: 200px; position: relative; margin: auto;
+            transform-style: preserve-3d; transition: transform 0.6s;
+        }
+        .photo img {
+            width: 200px; height: 200px; border-radius: 50%;
+            border: 5px solid navy; backface-visibility: hidden;
+            position: absolute; top: 0; left: 0;
+        }
+        .photo img.back { transform: rotateY(180deg); }
+        .photo:hover { transform: rotateY(180deg); }
+    
+        section {
+            margin: 20px auto; padding: 20px;
+            max-width: 800px; background: #f5f5dc; /* Updated color */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section h2 { text-align: center; color: navy; margin-bottom: 15px; text-transform: uppercase; }
+        section p { line-height: 1.5; text-align: justify; }
+    
+        table {
+            width: 100%; border-collapse: collapse; margin: 20px 0;
+        }
+        table th, table td {
+            border: 1px solid #ddd; padding: 8px;
+            text-align: left; font-size: 0.9em;
+        }
+        table th {
+            background-color: navy; color: white;
+        }
+    
+        .contact-icons {
+            display: flex; justify-content: center; gap: 15px; margin: 10px 0;
+        }
+        .contact-icons a {
+            font-size: 1.5em; color: navy; transition: transform 0.3s;
+        }
+        .contact-icons a:hover { transform: scale(1.2); }
+    
+        footer {
+            text-align: center; background-color: #333; color: white;
+            padding: 10px 0; font-size: 0.9em;
+        }
+    </style>    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Romil Guru</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#internship">Internship</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="photo-container">
+            <div class="photo">
+                <img src="C:\Users\Romil\OneDrive\Desktop\romil photo pics.jpg" alt="Romil Guru" class="front">
+                <img src="C:\Users\Romil\OneDrive\Pictures\3344.jpg" alt="Alternate Photo" class="back">
+            </div>
+        </div>
+        <h1>Hello, I'm <span style="color: navy;">Romil Guru</span></h1>
+        <p>Marketing & Finance Enthusiast | MBA Graduate</p>
+        <div class="btn-group">
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <blockquote style="font-style: italic; font-weight: bold; font-size: larger; text-transform: lowercase;">
+            fueling ideas with passion, blending strategy with creativity, and driving success through innovation – i’m all about turning challenges into opportunities!
+        </blockquote>
+        <p>Hello! I'm Romil Guru, a creative and dedicated individual from Hoshangabad, Madhya Pradesh. With roots in a hardworking agricultural family, I bring the values of perseverance and innovation into everything I do.
+    
+            Currently pursuing an MBA with dual specialization in Marketing and Finance from the prestigious Institute of Professional Education and Research (IPER), Bhopal, I have honed my skills in business strategy, analytics, and innovation.
+            
+            Let’s connect and explore opportunities to create, innovate, and make an impact!
+        </p>
+    </section>    
+
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institute</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MBA (Marketing & Finance)</td>
+                    <td>IPER, Bhopal</td>
+                    <td>2023-2025</td>
+                </tr>
+                <tr>
+                    <td>B.Com (Computers)</td>
+                    <td>Govt. Narmada College</td>
+                    <td>2020-2023</td>
+                </tr>
+                <tr>
+                    <td>HSSC (Commerce)</td>
+                    <td>Kendriya Vidyalaya, S.P.M</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>SSC</td>
+                    <td>Kendriya Vidyalaya</td>
+                    <td>2018</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="academic-projects">
+        <h2>Academic Projects</h2>
+        <div style="display: flex; justify-content: space-evenly; align-items: center; text-align: center; gap: 30px;">
+            <!-- First Logo -->
+            <div style="flex: 1; padding: 10px;">
+                <img src="https://static.vecteezy.com/system/resources/previews/010/213/047/non_2x/kyc-letter-technology-logo-design-on-white-background-kyc-creative-initials-letter-it-logo-concept-kyc-letter-design-vector.jpg" alt="KYC Logo" style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 10px;">
+                <p>
+                    <strong>KYC</strong><br>
+                    <strong>know your customer</strong><br>
+                    <span>(understanding consumer psychology through market research, conducted by IPER)</span>
+                </p>
+            </div>
+    
+            <!-- Second Logo -->
+            <div style="flex: 1; padding: 10px;">
+                <img src="https://static.vecteezy.com/system/resources/previews/017/793/707/non_2x/byi-letter-royalty-mandala-shape-logo-byi-brush-art-logo-byi-logo-for-a-company-business-and-commercial-use-vector.jpg" alt="BYI Logo" style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 10px;">
+                <p>
+                    <strong>BYI</strong><br>
+                    <strong>beyond your imagination</strong><br>
+                    <span>(developed a model on the value chain of sports shoes (Step-Up))</span>
+                </p>
+            </div>
+    
+            <!-- Third Logo -->
+            <div style="flex: 1; padding: 10px;">
+                <img src="https://static.vecteezy.com/system/resources/previews/009/674/533/non_2x/wwf-letter-logo-design-on-white-background-wwf-creative-initials-letter-logo-concept-wwf-letter-design-vector.jpg" alt="WWF Logo" style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 10px;">
+                <p>
+                    <strong>WWF</strong><br>
+                    <strong>the market wrestling</strong><br>
+                    <span>(product launching simulation competition (SipSnaps) packaged milk shakes)</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="internship">
+        <h2>Internship</h2>
+        <p><strong>Company Name:</strong> ITC Limited (Agriculture Division)</p>
+        <p><strong>Duration:</strong> 45-Day Internship (14 May, 2024 - 30 July, 2024)</p>
+        <p><strong>Location:</strong> ITC Choupal Sagar, Itarsi</p>
+        <p><strong>Roles and Responsibilities:</strong></p>
+        <ul>
+            <li>Enhancing turnover through effective sales & marketing analysis</li>
+            <li>Inventory Management</li>
+            <li>Retail Management</li>
+            <li>Fuel Pump Management</li>
+            <li>Farmer Producer Organization (FPO) initiatives</li>
+            <li>Special projects and minor exposure to SAP operations</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Proficient in MS Office (Word, Excel, PowerPoint).</li>
+            <li>Time management.</li>
+            <li>Critical thinking.</li>
+            <li>Leadership.</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-icons">
+            <a href="mailto:romilguru357@gmai.com"><i class="fas fa-envelope"></i></a>
+            <a href="http://www.linkedin.com/in/romilguru" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="tel:+917067553007"><i class="fas fa-phone"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Romil Guru. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+
